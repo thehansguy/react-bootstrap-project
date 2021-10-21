@@ -1,22 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+// import LayoutStoffs from "./components/LayoutStoffs";
+import DismissibleToast from "./components/DismissableToast";
+import BasicToast from "./components/BasicToast";
+import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Demo React Bootstrap Stoffs!</h2>
+        <hr />
+        {/* <LayoutStoffs /> */}
+        <h5> Components Stoffs</h5>
+        <BasicToast />
+        <DismissibleToast />
+        <Tooltip />
       </header>
     </div>
   );
